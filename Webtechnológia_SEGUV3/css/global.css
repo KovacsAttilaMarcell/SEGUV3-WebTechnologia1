@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f3f0ea; /* háttérszín – követelmény */
+    background: #f3f0ea;
     color: #333;
 }
 
@@ -72,7 +72,7 @@ nav a:hover {
 }
 
 /* =======================================
-   LINK ALAP STÍLUS (követelmény)
+   LINK ALAP STÍLUS
 ======================================= */
 
 a {

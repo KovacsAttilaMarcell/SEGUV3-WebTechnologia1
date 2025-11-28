@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
 
     // Gomb megjelenítése amikor legörgetünk
-window.onscroll = function () {
+    window.onscroll = function () {
     let btn = document.getElementById("topBtn");
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         btn.style.display = "block";
