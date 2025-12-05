@@ -10,33 +10,51 @@ $(document).ready(function () {
     });
   });
 
-  /* ===== KERESŐ MEZŐ MIATTI UGRÁLÁS JAVÍTÁSA ===== */
+  /* ===== KERESŐ MEZŐ MIATTI UGRÁLÁS  ===== */
 
-let scrollLocked = false;
+    let scrollLocked = false;
 
-// ha gépel a keresőbe → lezárjuk a scroll figyelést
-$(document).on("input", "#kaveKereses", function () {
-    scrollLocked = true;
+    $(document).on("input", "#kaveKereses", function () {
 
-    // fél másodpercig nem enged scroll eseményt
-    setTimeout(() => {
-        scrollLocked = false;
-    }, 500);
-});
+        scrollLocked = true;
 
-/* ===== TOP GOMB — csak akkor jelenik meg, ha nem gépelünk ===== */
+        // Jelezzük látványosan
+        $("#topBtn")
+            .css({
+                background: "red",
+                opacity: "0.4"
+            })
+            .text("🔒");
 
-window.addEventListener("scroll", function () {
+        setTimeout(() => {
+            scrollLocked = false;
 
-    if (scrollLocked) return; // keresés közben nem történik semmi
+            // Visszaáll az eredetibe
+            $("#topBtn")
+                .css({
+                    background: "",
+                    opacity: "1"
+                })
+                .text("⬆");
+        }, 1000);
+    });
 
-    const topBtn = document.getElementById("topBtn");
+    /* ===== TOP GOMB — csak akkor jelenjen meg, ha nem gépelünk ===== */
 
-    if (document.documentElement.scrollTop > 300) {
-        topBtn.style.display = "block";
-    } else {
-        topBtn.style.display = "none";
-    }
-});
+    window.addEventListener("scroll", function () {
+
+        const topBtn = document.getElementById("topBtn");
+
+        if (scrollLocked) {
+            topBtn.style.display = "none";
+            return;
+        }
+
+        if (document.documentElement.scrollTop > 300) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    });
 
 });

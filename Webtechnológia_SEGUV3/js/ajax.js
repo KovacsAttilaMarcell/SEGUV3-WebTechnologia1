@@ -132,9 +132,7 @@ $(document).ready(function () {
       $viewToggleBtn.text('🔄 Kártya nézet');
     }
   });
-});
-
-// --- SEGÉDFÜGGVÉNYEK ---
+  // --- SEGÉDFÜGGVÉNYEK ---
 
 // TÁBLÁZAT KIÍRÁSA
 function renderKaveTabla(lista, $tbody) {
@@ -201,3 +199,5 @@ function escapeHtml(text) {
     })[s];
   });
 }
+
+});
