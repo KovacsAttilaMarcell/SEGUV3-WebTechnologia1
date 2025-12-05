@@ -1,0 +1,31 @@
+{
+  "kavek": [
+
+    { "nev": "Espresso", "tipus": "Feketekávé", "erosseg": "Erős" },
+    { "nev": "Ristretto", "tipus": "Feketekávé", "erosseg": "Nagyon erős" },
+    { "nev": "Lungo", "tipus": "Feketekávé", "erosseg": "Közepes" },
+
+    { "nev": "Americano", "tipus": "Hígított kávé", "erosseg": "Lágy" },
+    { "nev": "Cappuccino", "tipus": "Tejeskávé", "erosseg": "Közepes" },
+    { "nev": "Latte", "tipus": "Tejeskávé", "erosseg": "Lágy" },
+    { "nev": "Latte Macchiato", "tipus": "Tejeskávé", "erosseg": "Lágy" },
+
+    { "nev": "Mocha", "tipus": "Csokoládés kávé", "erosseg": "Közepes" },
+    { "nev": "Flat White", "tipus": "Tejeskávé", "erosseg": "Erős" },
+    { "nev": "Cortado", "tipus": "Tejeskávé", "erosseg": "Erős" },
+
+    { "nev": "Irish Coffee", "tipus": "Alkohollal", "erosseg": "Erős" },
+    { "nev": "Vienna Coffee", "tipus": "Tejszínhabos", "erosseg": "Közepes" },
+
+    { "nev": "Affogato", "tipus": "Fagylaltos", "erosseg": "Közepes" },
+    { "nev": "Doppio", "tipus": "Feketekávé", "erosseg": "Nagyon erős" },
+
+    { "nev": "Turkish Coffee", "tipus": "Fűszeres", "erosseg": "Erős" },
+
+    { "nev": "Café au Lait", "tipus": "Tejeskávé", "erosseg": "Lágy" },
+    { "nev": "Café Bombón", "tipus": "Kondenzált tejes", "erosseg": "Közepes" },
+
+    { "nev": "Macchiato", "tipus": "Feketekávé", "erosseg": "Erős" },
+    { "nev": "Espresso Romano", "tipus": "Citromos espresso", "erosseg": "Erős" }
+  ]
+}
